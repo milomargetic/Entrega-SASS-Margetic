@@ -1,0 +1,210 @@
+/*reset css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*caracteristicas del fondo de body*/
+  
+  body {
+    background-image: linear-gradient(#7d8391, #53c7b6);
+  }
+  
+  /*INDEX*/
+  
+  .index__h1 {
+    color: #f2e0f0;
+    font-size: 95px;
+    font-family: 'Hurricane', cursive;
+    text-align: center;
+  }
+  
+  .encabezado {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    margin: 80px;
+    padding: 30px;
+  }
+  
+  .main__index {
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+    background-image: url('../img/Skating\ foto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    font-family: 'Moon Dance', cursive;
+    color: #f2e0f0;
+  }
+  
+  .grilla {
+    display: grid;
+    grid-template-areas: "header header header" "products propaganda propaganda" "services propaganda propaganda";
+    grid-template-rows: 14rem 10rem 10rem;
+    grid-template-columns: 5fr 2fr 0.5fr;
+  }
+  
+  .borde {
+    border: 2px solid antiquewhite;
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  section {
+    &#productos {
+      grid-area: products;
+    }
+  
+    &#servicios {
+      grid-area: services;
+    }
+  }
+  
+  aside {
+    grid-area: propaganda;
+  }
+  
+  /* media queries del Index */
+  
+  @media only screen and (min-width: 600px) {
+    .main__index {
+      height: 740px;
+      display: grid;
+      grid-template-areas: "header header" "products propaganda" "services propaganda";
+      justify-content: center;
+    }
+  }
+  
+  /*barra menu*/
+  
+  .barra__navegacion {
+    background-color: lightgray;
+  }
+  
+  .boton__home, .boton__aboutus, .boton__galery, .boton__contact, .boton__products {
+    font-family: 'Moon Dance', cursive;
+    font-size: 2.5rem;
+  }
+  
+  /*GALERÍA*/
+  
+  .galeria__div__header--center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 80px;
+    padding: 30px;
+  }
+  
+  .galeria__main__div__h2--center {
+    font-size: 40px;
+    font-family: 'Hurricane', cursive;
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /*PRODUCTOS*/
+  
+  .encabezado__productos {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    margin: 80px;
+    padding: 30px;
+  }
+  
+  .productos__main__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: 35px;
+  }
+  
+  .productos__main {
+    font-size: 40px;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    color: #F9F9F9;
+  }
+  
+  .productos__lista {
+    margin: 15px;
+    list-style: none;
+    font-family: 'Moon Dance', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #F9F9F9;
+  }
+  
+  /*Sobre Nosotros*/
+  
+  .encabezado__sobrenosotros {
+    display: inline-flex;
+    align-items: center;
+    font-size: 90px;
+    font-family: 'Hurricane', cursive;
+  }
+  
+  .sobrenosotros__historia {
+    font-size: 30px;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+    color: #F9F9F9;
+    background-image: url('../img/Skating\ foto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .sobrenosotros__historia__texto {
+    size: 100px;
+    font-family: 'Moon Dance', cursive;
+    font-size: 60px;
+    color: #F9F9F9;
+  }
+  
+  /*CONTACTO*/
+  
+  .encabezado__contacto {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-size: 45px;
+    color: #F9F9F9;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 80px;
+    color: #F9F9F9;
+  }
+  
+  .redes {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+  }
